@@ -10,7 +10,9 @@
     ],
     "require": {
         "php": ">=7.3.0 <8.1.0",
-        "getkirby/cms": "3.6-rc3"
+        "getkirby/cms": "3.6-rc3",
+        "getkirby/layouts": "^1.0",
+        "spatie/ray": "^1.32"
     },
     "config": {
         "optimize-autoloader": true
