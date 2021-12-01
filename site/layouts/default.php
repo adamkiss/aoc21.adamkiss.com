@@ -8,7 +8,7 @@
 
 <body class="antialiased bg-gray-100 text-black dark:bg-gray-900 dark:text-white">
 	<?= snippet('nav', [], true); ?>
-	<div class="mx-2 sm:mx-4 md:mx-6 lg:mx-auto lg:max-w-4xl"><?php
+	<div class="mx-2 sm:mx-4 md:mx-12 lg:mx-auto lg:max-w-2xl py-4 md:py-8 lg:pb-20"><?php
 		slot('content');
 		endslot();
 

@@ -15,10 +15,12 @@ body {
 
 @layer components {
 	.styled-html {
-		h1, h2 { @apply text-3xl; }
-		a { @apply underline }
-		p { @apply mt-2; }
-		p + h1, p + h2 { @apply mt-8; }
+		@apply text-xl leading-8;
+
+		h1, h2 { @apply text-3xl md:text-4xl; }
+		a { @apply underline hover:bg-toxic dark:hover:text-toxic dark:hover:bg-transparent }
+		p, ul { @apply mt-2; }
+		p + h1, p + h2, ul + h1, ul + h2 { @apply mt-8; }
 	}
 }
 

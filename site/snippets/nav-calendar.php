@@ -1,14 +1,14 @@
 <footer>
-	<div class="no-js:hidden" [x-cloak]>
+	<div class="js:hidden" [x-cloak]>
 		<hr>
 		<div class="text-2xl text-center my-4">Calendar</div>
 	</div>
 
 	<div class="
-		js:fixed js:z-20 js:top-14 lg:js:top-16 js:right-0
+		js:fixed js:z-20 js:top-14 js:right-0
 		p-2 pt-4 grid grid-cols-7 gap-2
 		bg-gray-100 dark:bg-gray-900 bg-opacity-95 text-black dark:text-white
-		js:md:border-l js:border-b js:border-black bg-blur-lg
+		js:md:border-l js:border-b bg-blur-lg border-black dark:border-white
 	" x-data="{active: false}" x-show="active" @toggle-calendar.window="active = !active">
 		<?php
 		// November

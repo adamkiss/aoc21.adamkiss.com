@@ -3,8 +3,30 @@ Title: Welcome!
 ----
 
 Text:
-# Advent of Code 2021
+# Advent of Code 2021 – The Kirby version
 
-Welcome to my Advent of Code 2021 site. It's been done as a [Kirby](https://getkirby.com) site, and the code is available on Github: [adamkiss/aoc21.adamkiss.com](https://github.com/adamkiss/aoc21.adamkiss.com).
+Another year, another [Advent of Code](https://adventofcode.com)! As is a tradition at this point, together with a few friends over at the [Kirby discord](https://chat.getkirby.com/), we've decided to solve the puzzles together.
 
-## Oi noi
+Their language of choice is Javascript, because I have no idea why, and I'm solving the puzzles in PHP. It started as a pure PHP version, but then I thought to myself: "fuck it, I might as well", and remade it as a [Kirby](https://getkirby.com) site.
+
+The code is open at [Github](https://github.com/adamkiss/aoc21.adamkiss.com), so everyone can browse the code, roll eyes at my extremely dirty CSS, or learn something about Kirby.
+
+## Friends
+
+This is the complete list of Github repositiories, since we've all opened the repositiories with the solutions to public.
+
+* [Moritz Stückler](https://github.com/pReya/adventofcode21)
+* [Bruno](https://github.com/moevbiz/aoc-2021)
+* [Roman Steiner](https://github.com/rasteiner/aoc-2021)
+* [Daniel Rivers](https://github.com/DanielRivers/advent-of-code-2021)
+
+
+
+## Try this site out locally
+
+There will be a way, but I have to figure out and program the inputs first.
+
+ 
+
+–
+Adam - [adamkiss.com](https://adamkiss.com)

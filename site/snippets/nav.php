@@ -4,13 +4,11 @@
 	bg-blur-lg font-bold text-xs sm:text-base lg:text-lg
 	border-b border-black dark:border-white
 ">
-	<nav class="mx-2 sm:mx-4 md:mx-6 lg:mx-auto lg:max-w-4xl flex justify-center items-center">
+	<nav class="mx-2 sm:mx-4 md:mx-12 lg:mx-auto lg:max-w-4xl flex justify-center items-center">
 		<span class="sm:hidden flex-grow">AoC '21</span>
 		<span class="hidden sm:inline flex-grow">Advent of Code 2021</span>
-		<a class="act:bg-toxic act:bg-opacity-50 rounded px-2 sm:px-4 py-2" <?= e($page->slug() === 'home', 'data-active') ?> href="/">ℹ️  Info</a>
+		<a class="act:bg-toxic act:bg-opacity-50 dark:act:bg-transparent dark:act:text-toxic rounded px-2 sm:px-4 py-2" <?= e($page->slug() === 'home', 'data-active') ?> href="/">ℹ️  Info</a>
 		<a class="px-2 sm:px-4 py-2" href="#calendar" x-data @click.prevent="$dispatch('toggle-calendar')">🗓  Calendar</a>
 		<a class="px-2 sm:px-4 py-2" href="https://adamkiss.com" target="_blank">→AK</a>
 	</nav>
 </div>
-
-<div class="h-16"> </div>
