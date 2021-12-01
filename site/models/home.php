@@ -24,8 +24,11 @@ class HomePage extends Page {
 				'template' => 'day',
 				'model' => 'day',
 				'content' => [
-					'title' => $day,
+					'title' => "Day $day",
 					'solution' => F::read(kirby()->root('days') . DS . $dayFile),
+					'dayFile' => $dayFile,
+					'dayInt' => (int) $day,
+					'result' => require_once kirby()->root('days') . DS . $dayFile,
 				],
 			];
 		}

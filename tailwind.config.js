@@ -42,9 +42,9 @@ module.exports = {
 		'./site/layouts/**/*.php',
 		'./site/templates/**/*.php',
 		'./site/snippets/**/*.php',
-		'./assets/**/*.js'
+		'./assets/**/*.js',
 	],
 	options: {
-		safelist: [/^styled-html/]
+		safelist: [/^styled-html/, /^language-php/]
 	},
 }

@@ -10,6 +10,4 @@ function p2(mixed $input): string
 	return '';
 }
 
-return function() {
-
-};
+return '';
