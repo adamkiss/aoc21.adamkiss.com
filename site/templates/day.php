@@ -32,7 +32,7 @@ layout() ?>
 			?></code></pre>
 		</div>
 
-		<h2 class="mt-8 text-center">Results</h2>
+		<p class="spacer"> </p>
 
 		<?= $page->result() ?>
 	</div>
