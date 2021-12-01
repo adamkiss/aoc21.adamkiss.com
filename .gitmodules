@@ -1,0 +1,3 @@
+[submodule "site/inputs"]
+	path = site/inputs
+	url = git@github.com:adamkiss/aoc21-inputs
