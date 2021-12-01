@@ -1,0 +1,6 @@
+Title: Home
+
+----
+
+Text:
+Welcome to aoc21.adamkiss.com. Have fun creating it.
