@@ -1,6 +1,6 @@
 # aoc21.adamkiss.com
 
-> Advent of Code 2021 - Solutions as Kirby site
+> Advent of Code 2021 - my solutions as a [Kirby](https://getkirby.com) site
 
 ---
 

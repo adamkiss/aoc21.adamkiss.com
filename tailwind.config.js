@@ -30,7 +30,7 @@ module.exports = {
 				modifySelectors(({ className }) => `.js .${e(`js${separator}${className}`)}`)
 			})
 			addVariant('no-js', ({ modifySelectors, separator }) => {
-				modifySelectors(({ className }) => `.no-js ${e(`no-js${separator}${className}`)}`)
+				modifySelectors(({ className }) => `.no-js .${e(`no-js${separator}${className}`)}`)
 			})
 		})
 	],
