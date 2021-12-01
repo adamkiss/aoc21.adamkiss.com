@@ -27,7 +27,7 @@ layout() ?>
 		</p>
 
 		<div class="text-base">
-			<pre><code data-language="php"><?=
+			<pre><code class="language-php"><?=
 				$page->solution()->html()
 			?></code></pre>
 		</div>
@@ -36,5 +36,8 @@ layout() ?>
 
 		<?= $page->result() ?>
 	</div>
-	<script src="/assets/vendor/rainbow-2.1.7.min.js"></script>
+	<link rel="stylesheet" href="/assets/hljs-styles/a11y-dark.min.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="/assets/hljs-styles/a11y-light.min.css" media="(prefers-color-scheme: light)">
+	<script src="/assets/vendor/hljs-v11.3.1.min.js"></script>
+	<script>hljs.highlightAll();</script>
 <?php endslot() ?>
