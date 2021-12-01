@@ -6,20 +6,20 @@
 	<?php snippet('layouts/head'); ?>
 </head>
 
-<body class="antialiased bg-gray-100 text-black  dark:bg-gray-900 dark:text-white px-2 sm:px-4 md:px-6 lg:px-12">
-	<div class="mx-auto max-w-2xl"><?php
-		snippet('nav');
-
+<body class="antialiased bg-gray-100 text-black dark:bg-gray-900 dark:text-white">
+	<?= snippet('nav', [], true); ?>
+	<div class="mx-2 sm:mx-4 md:mx-6 lg:mx-auto lg:max-w-4xl"><?php
 		slot('content');
 		endslot();
 
 		snippet('layouts/debug');
-		snippet('nav-calendar');
-
-		if (!option('debug')) : echo <<<HTML
-		<script data-goatcounter="https://aoc21-adam.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-		HTML;
-		endif;
 	?></div>
+	<?php
+		snippet('nav-calendar');
+		if (!option('debug')) : echo <<<HTML
+			<script data-goatcounter="https://aoc21-adam.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+			HTML;
+		endif;
+	?>
 </body>
 </html>

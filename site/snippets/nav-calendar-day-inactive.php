@@ -1,1 +1,1 @@
-<span class="p-2 text-center text-gray-400 dark:text-gray-700"><?= $day ?? ' ' ?></span>
+<span class="p-2 line-through text-center text-gray-300 dark:text-gray-700"><?= $day ?? ' ' ?></span>
