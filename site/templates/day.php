@@ -20,7 +20,7 @@ layout() ?>
 			<?php endif; ?>
 		</div>
 
-		<p class="flex items-center justify-center">
+		<p class="text-sm md:text-base flex items-center justify-center">
 			<a href="https://adventofcode.com/2021/day/<?= $page->dayInt() ?>">Advent of Code detail</a>
 			<span> • </span>
 			<a href="https://github.com/adamkiss/aoc21.adamkiss.com/blob/main/site/days/<?= $page->dayFile() ?>">Solution on the Github</a>
