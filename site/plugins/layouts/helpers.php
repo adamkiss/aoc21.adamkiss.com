@@ -7,15 +7,15 @@ function layout($name = null, ?array $data = null)
         $name = null;
     }
 
-    Kirby\Layout\Layout::start($name, $data);
+    Kirby\Layouts\Layout::start($name, $data);
 }
 
 function slot(?string $name = null)
 {
-    Kirby\Layout\Slots::start($name);
+    Kirby\Layouts\Slots::start($name);
 }
 
 function endslot()
 {
-    echo Kirby\Layout\Slots::end();
+    echo Kirby\Layouts\Slots::end();
 }

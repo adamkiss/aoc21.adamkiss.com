@@ -1,22 +1,32 @@
-# Layout plugin for getkirby.com
+# Kirby Layouts plugin
 
-This plugin extends our templates with a powerful layout system. It's a temporary plugin. We plan to add this feature to Kirby's core.
+This plugin extends Kirby’s templates with a powerful layout system.
 
 ## Installation
 
-For now, this plugin is only part of our website repository. 
+### Download
 
-1. Download the repo 
-2. Copy `/site/plugins/layout`
-3. Paste the layout folder in your `/site/plugins` folder
+Download and copy this repository to `/site/plugins/layouts`.
+
+### Git submodule
+
+```
+git submodule add https://github.com/getkirby/layouts.git site/plugins/layouts
+```
+
+### Composer
+
+```
+composer require getkirby/layouts
+```
 
 ## How it works
 
-You can create full HTML layouts in a new `/site/layouts` folder. Layouts can define slots, which will then be filled with content by templates. 
+You can create full HTML layouts in a new `/site/layouts` folder. Layouts can define slots, which will then be filled with content by templates.
 
 ### Layouts
 
-You can create as many layouts as you need in your `/site/layouts` folder. Start with a default.php layout that will be picked up if no layout name is specified in the template. 
+You can create as many layouts as you need in your `/site/layouts` folder. Start with a `default.php` layout that will be picked up if no layout name is specified in the template.
 
 #### /site/layouts/default.php
 ```html
@@ -68,7 +78,7 @@ To use a specific layout, you can pass its name to the `layout()` method.
 
 ## Working with slots
 
-You can add as many different slots to your layout as you need. The default slot goes without a specific name. Every other slot needs a unique name. Slots in layouts can define default content, which will be rendered if the slot is not used in the template. 
+You can add as many different slots to your layout as you need. The default slot goes without a specific name. Every other slot needs a unique name. Slots in layouts can define default content, which will be rendered if the slot is not used in the template.
 
 #### /site/layouts/default.php
 ```html
@@ -78,11 +88,11 @@ You can add as many different slots to your layout as you need. The default slot
         <title>Blog</title>
         <?php endslot() ?>
     </head>
-    <body>        
-      <div class="page">        
+    <body>
+      <div class="page">
 
         <header class="header">
-          <a href="/">Logo</a>          
+          <a href="/">Logo</a>
         </header>
 
         <div class="sidebar">
@@ -102,7 +112,7 @@ You can add as many different slots to your layout as you need. The default slot
 </html>
 ```
 
-Once the slots are defined, you can fill them from your template. If you use multiple slots, you must wrap content for each slot in the `slot` and `endslot` methods. 
+Once the slots are defined, you can fill them from your template. If you use multiple slots, you must wrap content for each slot in the `slot` and `endslot` methods.
 
 #### /site/templates/blog.php
 ```html
@@ -119,7 +129,7 @@ Once the slots are defined, you can fill them from your template. If you use mul
 
 ### Working with snippets
 
-Kirby's template system stays exactly as you know it. You can still work with templates without layouts and you can also still use snippets – in your templates and in your layouts. 
+Kirby's template system stays exactly as you know it. You can still work with templates without layouts and you can also still use snippets – in your templates and in your layouts.
 
 #### /site/layouts/default.php
 ```html
@@ -129,8 +139,8 @@ Kirby's template system stays exactly as you know it. You can still work with te
         <title>Blog</title>
         <?php endslot() ?>
     </head>
-    <body>        
-      <div class="page">        
+    <body>
+      <div class="page">
 
         <?php snippet('header') ?>
 
@@ -163,8 +173,8 @@ You can pass global data to the layout method and make it available in every slo
         <title><?= $title ?></title>
         <?php endslot() ?>
     </head>
-    <body>        
-      <div class="page">        
+    <body>
+      <div class="page">
 
         <?php snippet('header') ?>
 
@@ -192,6 +202,10 @@ You can pass global data to the layout method and make it available in every slo
 Some more content ...
 ```
 
-## More
+## License
 
-Check out our layouts and templates for more inspiration. 
+MIT
+
+## Credits
+
+- [Kirby Team](https://getkirby.com)

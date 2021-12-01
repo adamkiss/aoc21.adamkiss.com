@@ -1,9 +1,18 @@
 <?php
 
-namespace Kirby\Layout;
+namespace Kirby\Layouts;
 
 use Kirby\Toolkit\Tpl;
 
+/**
+ * Template
+ *
+ * @package   Kirby Layouts
+ * @author    Bastian Allgeier <bastian@getkirby.com>
+ * @link      https://getkirby.com
+ * @copyright Bastian Allgeier
+ * @license   MIT
+ */
 class Template extends \Kirby\Cms\Template
 {
     /**
