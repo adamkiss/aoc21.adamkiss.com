@@ -25,6 +25,9 @@ body {
 		pre {
 			@apply p-2 -mx-2 mt-8;
 		}
+		p>code {
+			@apply text-[.9em] px-1 bg-white dark:bg-black border border-gray-300 dark:border-gray-800;
+		}
 	}
 	pre { overflow-x: scroll; }
 }

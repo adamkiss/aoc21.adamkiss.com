@@ -23,8 +23,9 @@ This is the complete list of Github repositiories, since we've all opened the re
 
 
 ## Try this site out locally
+Since the Advent of Code authors asked the participants to not share their inputs, the inputs in this site are added as a submodule from private repo (which is _a pain in the ass_). Anyway, if you want to try the code, you'll need to provide your own inputs.
 
-There will be a way, but I have to figure out and program the inputs first.
+They are located in the `/site/inputs` directory, and are PHP files that return your specific input in the same shape as is the demo input for the relevant day, e.g. `array` of `integers` for the day 01.
 
  
 
