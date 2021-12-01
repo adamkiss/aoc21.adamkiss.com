@@ -15,6 +15,7 @@ node_modules
 # ------------
 Icon
 .DS_Store
+/kirby
 
 # Temporary files
 # ---------------
