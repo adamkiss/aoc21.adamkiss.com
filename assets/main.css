@@ -14,9 +14,11 @@ body {
 }
 
 @layer components {
-	.container {
-		@apply max-w-2xl mx-auto;
-		@apply px-4 md:px-6 lg:px-8 xl:px-12;
+	.styled-html {
+		h1, h2 { @apply text-3xl; }
+		a { @apply underline }
+		p { @apply mt-2; }
+		p + h1, p + h2 { @apply mt-8; }
 	}
 }
 

@@ -1,6 +1,10 @@
-Title: Home
+Title: Welcome!
 
 ----
 
 Text:
-Welcome to aoc21.adamkiss.com. Have fun creating it.
+# Advent of Code 2021
+
+Welcome to my Advent of Code 2021 site. It's been done as a [Kirby](https://getkirby.com) site, and the code is available on Github: [adamkiss/aoc21.adamkiss.com](https://github.com/adamkiss/aoc21.adamkiss.com).
+
+## Oi noi
