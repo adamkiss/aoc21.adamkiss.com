@@ -28,7 +28,7 @@ class HomePage extends Page {
 					'solution' => F::read(kirby()->root('days') . DS . $dayFile),
 					'dayFile' => $dayFile,
 					'dayInt' => (int) $day,
-					'result' => require_once kirby()->root('days') . DS . $dayFile,
+					'result' => kirby()->root('days') . DS . $dayFile,
 				],
 			];
 		}

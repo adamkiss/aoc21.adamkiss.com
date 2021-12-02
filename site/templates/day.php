@@ -34,7 +34,7 @@ layout() ?>
 
 		<p class="spacer"> </p>
 
-		<?= $page->result() ?>
+		<?= require_once $page->result() ?>
 	</div>
 	<link rel="stylesheet" href="/assets/hljs-styles/a11y-dark.min.css" media="(prefers-color-scheme: dark)">
 	<link rel="stylesheet" href="/assets/hljs-styles/a11y-light.min.css" media="(prefers-color-scheme: light)">
