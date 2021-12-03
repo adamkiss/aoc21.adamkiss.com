@@ -40,8 +40,6 @@ function p2(array $input): int
 		$pos++;
 	}
 
-	ray(bitsToDec(current($oxy)), bitsToDec(current($co2)));
-
 	return bitsToDec(current($oxy)) * bitsToDec(current($co2));
 }
 
