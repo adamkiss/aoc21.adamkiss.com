@@ -40,9 +40,19 @@ function p1(mixed $input): mixed
 	return $easyDigits;
 }
 
+function p2calculateLine(array $digits, array $output): int
+{
+	return 0;
+}
+
 function p2(mixed $input): mixed
 {
-	return '';
+	return array_sum(
+		array_map(
+			fn($line) => p2calculateLine($line['digits'], $line['output']),
+			$input
+		)
+	);
 }
 
 return implode('',[
